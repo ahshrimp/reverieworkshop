@@ -1,0 +1,173 @@
+<html>
+	<head>
+		<title>Encode code for HTML display</title>
+		<style type="text/css">			
+			
+			.btn{	
+				cursor:pointer;
+				border:outset 1px #ccc;
+				background:#ccc;
+				color:#666;
+				font-weight:bold;
+				padding: 1px 2px;
+			}
+															
+			.clear{
+				clear: both;
+			}
+									
+			#code_input {
+				background: #F5FFE1; 
+				padding: 3px; 
+				border: 1px solid #C8C8C8; 
+				font-family: Arial; 
+				font-size: 14px; 
+				color: #003246
+			}
+			
+			#code_output {
+				background: #DCF5FF; 
+				padding: 3px; 
+				border: 1px solid #C8C8C8; 
+				font-family: Arial; 
+				font-size: 14px; 
+				color: #003246
+			}
+			
+			code {
+				display: block;
+				font-family: 'Courier New';
+				overflow: auto;
+				border: 1px solid #ccc;
+				padding: 1px 10px 10px 21px;
+				max-height: 1200px;
+				line-height: 1.2em;
+				letter-spacing: 0px;
+				margin: 5px 5px 0 15px;			
+			}
+			
+			code.html{
+				font-size: 9pt;
+				color: blue;
+				background: #FFF url(http://sites.google.com/site/matthewhkh/file/BG_HTML.gif) left top repeat-y;
+			}
+			
+			#mainblock{
+				width: 1024px;
+			}
+					
+			#block{				
+				background-color:#F8F8EE;
+				border:1px solid #EEE;
+				padding:5px;				
+				width: 500px;	
+				min-height: 300px;
+				float: left;				
+			}			
+			
+			#block h2{
+				font-size:12px;
+				color:#333;
+				text-align:center;
+				border-bottom:3px solid #DDD;				
+			}
+			
+			#block2{				
+				background-color:#F8F8EE;
+				border:1px solid #EEE;
+				padding:5px;					
+				min-width: 500px;	
+				min-height: 300px;
+				float: left;				
+			}			
+			
+			#block2 h2{
+				font-size:12px;
+				color:#333;
+				text-align:center;
+				border-bottom:3px solid #DDD;				
+			}
+			
+			div.footer {
+				font-size:14px;
+				color:#333;
+				text-align:center;
+				margin-top: 10px;
+				border-top:3px solid #DDD;				
+			}
+		</style>
+		<script language="javascript">
+			function updateCode(){
+				var input_code = document.myform.code.value;
+				input_code = input_code.replace(/&/g, "&amp;");
+				input_code = input_code.replace(/</g, "&lt;");
+				input_code = input_code.replace(/>/g, "&gt;");
+				input_code = input_code.replace(/ /g,"&nbsp;");
+				
+				document.getElementById("code_output").value = input_code;
+				
+				input_code = input_code.replace(/ /g,"&nbsp;");
+				input_code = input_code.replace(/\t/g,"&nbsp;&nbsp;");
+				// for IE line break
+				input_code = input_code.replace(/\r\n/g,"<br/>");
+				
+				// for firefox line break
+				input_code = input_code.replace(/\n/g,"<br/>");
+				
+				
+								
+				document.getElementById("preview").innerHTML = input_code;
+			}
+		</script>
+	</head>
+	
+	<body>		
+		<div id="mainblock">			
+			<div id="block">
+				<h2>Input</h2>
+				<form name="myform">
+					<div>Input your code here:</div>
+					<textarea id="code_input" name="code" cols="70" rows="10" ></textarea>
+					<input type="button" name="update" value="convert" class="btn" onClick="javascript:updateCode();">				
+				</form>
+				
+			</div>
+					
+			<div id="block">
+				<h2>Output</h2>
+				<br/>
+				<div>
+					<form name="myform2">
+						<textarea id="code_output" name="code_output" cols="70" rows="10"></textarea>
+						<input type="button" name="select" value="select all" class="btn" onClick="javascript:document.myform2.code_output.focus();document.myform2.code_output.select();">
+					</form>
+				</div>
+			</div>		
+		</div>
+		
+		<div class="clear"></div>
+						
+		<div id="block2">
+			<h2>Preview : </h2>
+			<code class="html">			
+				<br/>
+				<span id="preview"></span>
+			</code>	
+			<div class="clear"></div>
+		</div>			
+		
+		<div class="clear"></div>
+		
+		<div class="footer">		
+			Encode code for HTML display v1.0 (
+			<script language="javascript">
+				var t = document.lastModified
+				if (t != "")
+					document.write(document.lastModified);
+				else
+					document.write("not support - document.lastModified");
+			</script>
+			)<br/>&copy; Reverie Workshop 2000-2008
+		</div>
+	</body>
+</html>
