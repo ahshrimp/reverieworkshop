@@ -1,0 +1,242 @@
+.post .post-body img:hover {
+	border:1px dotted #838b8b ;
+	background:#838b8b ;
+	filter:alpha(opacity=50);
+	opacity: 0.5;
+	-moz-opacity:0.5;
+	-khtml-opacity: 0.5;
+}
+
+.post .post-body a[href^="http:"] {
+	background:url(http://sites.google.com/site/matthewhkh/file/outlink.gif) no-repeat right top;
+	padding-right: 9px;
+}
+
+.post .post-body a[href$=".jpg"] {
+	background-image: none;
+	padding-right: 0px;
+}
+
+.post .post-body a[href$=".png"] {
+	background-image: none;
+	padding-right: 0px;
+}
+
+.post .post-body a[href$=".gif"] {
+	background-image: none;
+	padding-right: 0px;
+}
+
+.post .post-body a[href$=".jpe"] {
+	background-image: none;
+	padding-right: 0px;
+}
+
+.post .post-body a[href$=".JPG"] {
+	background-image: none;
+	padding-right: 0px;
+}
+
+.post .post-body a[href$=".PNG"] {
+	background-image: none;
+	padding-right: 0px;
+}
+
+.post .post-body a[href$=".GIF"] {
+	background-image: none;
+	padding-right: 0px;
+}
+
+.post .post-body a[href$=".JPE"] {
+	background-image: none;
+	padding-right: 0px;
+}
+
+.profile-data .profile_name{
+	padding-left: 20px;
+	background-repeat: no-repeat;
+	BACKGROUND-IMAGE: url(http://sites.google.com/site/matthewhkh/file/icon_profile_name.gif);
+}
+
+.profile-data .profile_location{
+	padding-left: 20px;
+	background-repeat: no-repeat;
+	BACKGROUND-IMAGE: url(http://sites.google.com/site/matthewhkh/file/icon_profile_location.gif);
+}
+
+.profile-textblock{
+	padding-left: 20px;
+	background-repeat: no-repeat;
+	BACKGROUND-IMAGE: url(http://sites.google.com/site/matthewhkh/file/icon_profile_block.gif);
+}
+
+code {
+	display: block;
+	font-family: 'Courier New';
+	overflow: auto;
+	border: 1px solid #ccc;
+	padding: 1px 10px 10px 21px;
+	max-height: 1200px;
+	line-height: 1.2em;
+	letter-spacing: 0px;
+	margin: 5px 5px 0 15px;
+}
+
+code.c{
+	font-size: 9pt;
+	color: #000;
+	background: #ccc url(http://sites.google.com/site/matthewhkh/file/BG_CODE.gif) left top repeat-y;
+}
+
+code.sql{
+	font-size: 9pt;
+	color: #000;
+	background: #ccc url(http://sites.google.com/site/matthewhkh/file/BG_SQL.gif) left top repeat-y;
+}
+
+code.cmd {
+	font-size: 9pt;
+	color: #ccc;
+	background: #000 url(http://sites.google.com/site/matthewhkh/file/BG_CMD.gif) left top repeat-y;
+}
+
+code.html{
+	font-size: 9pt;
+	color: blue;
+	background: #FFF url(http://sites.google.com/site/matthewhkh/file/BG_HTML.gif) left top repeat-y;
+}
+
+code.file{
+	font-family: 'Georgia';
+	font-size: 9pt;
+	color: #000;
+	background: #FFF url(http://sites.google.com/site/matthewhkh/file/BG_FILE.gif) left top repeat-y;
+}
+
+em{
+	background: url(http://sites.google.com/site/matthewhkh/file/bl_red.gif) repeat-x bottom;
+	line-height:22px;
+	font-style:normal;
+}
+
+em.green{
+	background: url(http://sites.google.com/site/matthewhkh/file/bl_green.gif) repeat-x bottom;
+	line-height:22px;
+	font-style:normal;
+}
+
+div.source {
+	padding-left: 20px;
+	background-repeat: no-repeat;
+	BACKGROUND-IMAGE: url(http://sites.google.com/site/matthewhkh/file/source.gif);
+}
+
+div.related_post {
+	padding-left: 20px;
+	background-repeat: no-repeat;
+	BACKGROUND-IMAGE: url(http://sites.google.com/site/matthewhkh/file/icon_post.gif);	
+}
+
+span.post_counter{
+	padding-left: 16px;	
+	background-repeat: no-repeat;
+	BACKGROUND-IMAGE: url(http://sites.google.com/site/matthewhkh/file/thicon_view_text.png);
+}
+
+div.title_exp {
+	padding-left: 20px;
+	background-repeat: no-repeat;
+	BACKGROUND-IMAGE: url(http://sites.google.com/site/matthewhkh/file/title_exp.gif);
+}
+
+.post .postmeta .post-labels {		
+	float: left;	
+	display:inline;
+	font-size:11px;	
+	color: #333;
+	background-repeat:no-repeat;
+	background-position:0 -2px;
+	padding:0px 0px 3px 20px;	
+	background-image:url(http://sites.google.com/site/matthewhkh/file/thicon_folder.gif);
+}
+
+.post .postmeta .post-labels a:link,
+.post .postmeta .post-labels a:visited{color:#00A200;}
+.post .postmeta .post-labels a:hover{color:#333;}
+
+div.showlink{
+	background-repeat:no-repeat;
+	padding-left: 20px;
+	BACKGROUND-IMAGE: url(http://sites.google.com/site/matthewhkh/file/icon_showlink.gif);
+}
+
+div.hidelink{
+	background-repeat:no-repeat;
+	padding-left: 20px;
+	BACKGROUND-IMAGE: url(http://sites.google.com/site/matthewhkh/file/icon_hidelink.gif);
+}
+
+span.bookmark-icons { 
+	float: left; 
+} 
+span.bookmark-icons a{ 
+	text-decoration: none; 
+	padding:5pt 5px; 
+} 
+
+span.bookmark-icons img{
+	filter:alpha(opacity=50);
+	opacity: 0.5;
+	-moz-opacity:0.5;
+	-khtml-opacity: 0.5;
+}
+
+span.bookmark-icons img:hover{
+	filter:alpha(opacity=100);
+	opacity: 1;
+	-moz-opacity:1;
+	-khtml-opacity: 1;
+}
+
+.notebox{
+	border: 1px solid #b8b8b8;
+	margin-top: 2em;
+	margin-bottom: 1em;
+	width: 500px;
+	background-color: #ffffcc;
+}
+
+.notebox .innerdiv{
+	background: transparent url(http://sites.google.com/site/matthewhkh/file/notebox-footer.gif) bottom right no-repeat;
+	position: relative;
+	margin-top: -1em;
+	left: 2px;
+	top: 2px;
+	padding: 1px 4px 15px 5px;
+}
+
+.notebox .notebox_header{
+	display: block;
+	width:100%;		
+	height:30px;				
+	background:transparent url(http://sites.google.com/site/matthewhkh/file/notebox-header.gif) top center no-repeat;				
+	position: relative;
+	top: -17px;				
+}
+
+.download_file {				
+	display: block;
+	width: 70px;	
+	color: #c0c0c0;
+	text-align: center;
+	margin: 5px;
+	border: 1px dotted;
+}			
+									
+.download_file .icon {
+	display: block;
+	height:40px;
+	width: 100%;
+	background: url(http://sites.google.com/site/matthewhkh/file/download.gif) no-repeat center;
+	cursor: hand;
+}
